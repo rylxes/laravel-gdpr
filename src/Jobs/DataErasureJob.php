@@ -41,6 +41,11 @@ class DataErasureJob implements ShouldQueue
 
         // Re-dispatch if still in cooling-off period
         if ($request->isInCoolingOff()) {
+            // Only re-dispatch on async queues to prevent infinite loops on sync driver
+            if (config('queue.default') === 'sync') {
+                return;
+            }
+
             self::dispatch($this->erasureRequestId)
                 ->delay($request->scheduled_at);
 
