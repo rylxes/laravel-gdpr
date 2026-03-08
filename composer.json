@@ -1,0 +1,77 @@
+{
+    "name": "rylxes/laravel-gdpr",
+    "description": "GDPR and CCPA compliance toolkit for Laravel with data export, right to erasure, consent management, and audit trails",
+    "keywords": [
+        "laravel",
+        "gdpr",
+        "ccpa",
+        "compliance",
+        "privacy",
+        "data-export",
+        "right-to-erasure",
+        "consent",
+        "data-protection",
+        "rylxes"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/rylxes/laravel-gdpr",
+    "authors": [
+        {
+            "name": "Sherriff Agboola",
+            "email": "rylxes@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/rylxes/laravel-gdpr/issues",
+        "source": "https://github.com/rylxes/laravel-gdpr",
+        "email": "rylxes@gmail.com"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/events": "^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/mail": "^10.0|^11.0|^12.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0",
+        "illuminate/queue": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rylxes\\Gdpr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rylxes\\Gdpr\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rylxes\\Gdpr\\GdprServiceProvider"
+            ],
+            "aliases": {
+                "Gdpr": "Rylxes\\Gdpr\\Facades\\Gdpr"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

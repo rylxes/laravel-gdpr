@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Exclude dev/CI files from production archive (composer --prefer-dist)
+/.github            export-ignore
+/tests              export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/phpunit.xml.dist   export-ignore
+/CHANGELOG.md       export-ignore
+/CONTRIBUTING.md    export-ignore
