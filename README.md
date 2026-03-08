@@ -1,5 +1,7 @@
 # Laravel GDPR
 
+> **[Full Documentation](https://rylxes.com/docs/laravel-gdpr)** — Complete usage guide, configuration reference, and API docs.
+
 [![Latest Version](https://img.shields.io/packagist/v/rylxes/laravel-gdpr.svg?style=flat-square)](https://packagist.org/packages/rylxes/laravel-gdpr)
 [![PHP Version](https://img.shields.io/badge/php-%5E8.1-blue.svg?style=flat-square)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/laravel-10.x%20%7C%2011.x%20%7C%2012.x-red.svg?style=flat-square)](https://laravel.com)
